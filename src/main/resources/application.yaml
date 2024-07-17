@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ankit-example-skeleton
+  r2dbc:
+    url: r2dbc:tc:postgresql:///test_skeleton?TC_IMAGE_TAG=9.6.8
+#    username: test
+#    password: test
+
+server:
+  port: 8080
+
+# custom properties, to access them we use @Value(${}) or @ConfigurationProperties(prefix="") annotations
+custom:
+  message: "Hello, Good Morning!!"
+
